@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.head{
+			text-align: center;
+			color: #ffffff;
+			margin: 2em 2em;
+			padding: 2em 2em;
+	        border: 0.5em solid blue;
+	        border-radius: 50px;
+	        text-align:center;
+	        text-decoration: underline;
+	        transition: transform 1.5s;
+		}
+
+		.head:hover{
+	        overflow: hidden;
+	        transform: scale(1.20,1.20);
+}
+
+
+		*{
+			margin: 0;
+			padding: 0;
+
+		}
+
+		body{
+			font-family: sans-serif;
+			background-image: url('wow.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+		a:link,
+		a:visited{
+			text-decoration: none;
+		}
+
+       .modal{
+       	background-color: rgba(0,0,0,0.8);
+       	width: 100%;
+       	height: 100%;
+       	position: absolute;
+       	top: 0;
+       	left: 0;
+       	z-index: 10px;
+       	opacity: 0;
+       	visibility: hidden;
+       	transition: all 2s;
+
+       }
+
+       .modal__content{
+       	width: 40%;
+       	height: 30%;
+       	background-color: #fff;
+       	position: absolute;
+       	top: 50%;
+       	left:50%;
+       	transform: translate(-50%, -50%);
+       	padding: 2em;
+       	border-radius: 20px;
+       	opacity: 0;
+       	visibility: hidden;
+       	transition: all 2s;
+       }
+
+        #modal:target{
+        	opacity: 1;
+        	visibility: visible;
+        }
+
+        #modal:target .modal__content{
+        	opacity: 1;
+        	visibility: visible;
+        }
+
+         
+
+        .modal__close{
+       	color: #363636;
+       	font-size: 2em;
+       	position: absolute;
+       	top: 1em;
+       	right:1em;
+
+
+       }
+
+       .modal__heading{
+       	color: dodgerblue;
+       	margin-bottom: 1em;
+       }
+
+       .modal__paragraph{
+       	line-height: 1.5em;
+       }
+
+       .modal-open{
+       	display:inline-block;
+       	color: #ffffff;
+       	font-size: 2em;
+       	margin: 2em;
+        border: 0.5em solid black;
+        padding: 1em 1em ;
+        border-radius: 50px;
+       }
+
+
+        
+
+	</style>
+</head>
+<body>
+<div class="head"><h1>congralutations</h1><br>
+<h3>Your Form Has Been Submitted</h3><br>
+<h4>Thank You</h4></div><br>
+
+
+ <a href="#modal" class="modal-open">Click Me</a>
+
+                   <div class="modal" id="modal">
+                   	<div class="modal__content">
+                   		<a href="#" class="modal__close">&times;</a>
+                   		   <h2 class="modal__heading"> courses offered</h2>
+                   		   <p class="modal__paragraph">Computer Science<br> Electrical And Electronics<br> Electronics And Communications<br>civil<br>Mechanical</p>
+                   	</div>
+                    </div>
+
+        
+
+</body>
+</html>
+

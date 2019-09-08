@@ -1,0 +1,101 @@
+.head{
+	color: #ffffff;
+	border-bottom: 0.5em solid blue;
+	border-radius: 50px;
+	text-align:center;
+}
+
+
+.logoarea{
+	position: absolute;
+	left: 50% ; 
+	margin-left: -93px; 
+	margin-top: 10px;
+    transition: transform 2s;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+
+.logoarea:hover {
+	overflow: hidden;
+	transform: scale(1.5,1.5);
+}
+
+.registration{
+	margin: auto;
+	width: 45%;
+	text-align: center;
+	color: white;
+	background:rgba(0,0,0,0.5);
+	border: 3px solid white;	
+	padding: 15px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px #000000;
+    transition: transform 2s;
+}
+
+.registration:hover{
+	overflow: hidden;
+	transform: scale(1.20,1.20);
+}
+
+#name{
+	width: 60%;
+	padding: 1.8px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline:0px;
+	font-family: serif;
+	font-size: 18px;
+	background: none;
+    color: #ffffff;
+}
+
+#number{
+    width: 49.3%;
+	padding: 1.8px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline:0px;
+	font-family: serif;
+	font-size: 18px;
+	background: none;
+    color: #ffffff;
+}
+
+#num{
+	 width: 10%;
+	padding: 2.7px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline:0px;
+	background: none;
+	color: #ffffff;
+}
+
+#check{
+	font-family: serif;
+	font-size: 16px;
+}
+
+#sub{
+	text-align:center;
+	font-family: serif;
+	border:1px solid white;
+	outline: 0px;
+    border-radius: 3px;
+    background: #5CB3FF;
+    transition: transform 1.5s;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#sub:hover{
+	overflow: hidden;
+	transform: scale(1.20,1.20);
+}
+
+::placeholder{
+	color: #95B9C7;
+}
